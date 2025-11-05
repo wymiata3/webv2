@@ -14,10 +14,12 @@ repositories {
 }
 
 dependencies {
+    implementation platform("io.micronaut:micronaut-bom:3.9.7")
+
     implementation("io.micronaut.groovy:micronaut-runtime-groovy")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     implementation("io.micronaut.views:micronaut-views-core")
-    implementation("org.apache.groovy:groovy-templates:4.0.28") // Explicitly add groovy-templates
+    implementation("io.micronaut.views:micronaut-views-thymeleaf")
 
     compileOnly("io.micronaut:micronaut-http-client")
     compileOnly("io.micronaut:micronaut-http-validation")
